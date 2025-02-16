@@ -52,5 +52,3 @@ await page.getByRole('search', { name: 'Search bar input area' }).fill('cook boo
 await page.locator('#prod_details_undefined').getByRole('link', { name: 'My First Vegetarian Cook Book' }).click();
 await page.getByText('Add to Cart').click();
 });
-
- 
