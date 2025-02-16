@@ -13,4 +13,4 @@ Install lastest playwright extension -> Go to Testing in VS Code -> Run tests
 ** SCREENSHOTS AND VIDEOS ** 
 The playwright framework opens a browser of your choice running on either chromium , webkit or firefox. You can see the recording of the tests in real time. 
 
-You can download a pdf extension by tomoki1207 to view your recipe output.
+Recipes folder will add A4 size pdf of the selected recipe.
