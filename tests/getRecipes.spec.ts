@@ -10,3 +10,11 @@ await page.getByRole('link', { name: 'Buffalo Cauliflower Tacos' }).getByLabel('
 await page.getByRole('link', { name: 'Buffalo Cauliflower Tacos' }).click();
 await page.getByRole('button', { name: 'print recipe' });
 });
+
+var recipeUrl = 'https://www.whatsfordinner.co.za/recipe/vegetables/234714-buffalo-cauliflower-tacos/';
+
+test ('download your recipe', async({page})=> {
+    //This test to download pdf document for the above recipe - Buffalo Cauliflower Tacos
+    await page.goto(recipeUrl)
+    await page.pdf({ path: './Recipes/CauliflowerRecipe.pdf', format: 'A4' });
+});
