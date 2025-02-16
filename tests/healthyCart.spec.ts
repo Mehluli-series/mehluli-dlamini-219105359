@@ -1,15 +1,15 @@
 import { test, expect } from '@playwright/test';
-
+//Without Authentication & changing of address
 test('add to cart test', async ({ page }) => {
 await page.goto('https://www.woolworths.co.za/');
 await page.getByText('Delivery Address').click();
 await page.getByRole('textbox', { name: 'Enter your street address eg.' }).click();
-await page.getByRole('textbox', { name: 'Enter your street address eg.' }).fill('97 ');
+await page.getByRole('textbox', { name: 'Enter your street address eg.' }).fill('96 ');
 await page.getByRole('textbox', { name: 'Enter your street address eg.' }).press('CapsLock');
-await page.getByRole('textbox', { name: 'Enter your street address eg.' }).fill('97 Upper ');
+await page.getByRole('textbox', { name: 'Enter your street address eg.' }).fill('96 Chester Rd ');
 await page.getByRole('textbox', { name: 'Enter your street address eg.' }).press('CapsLock');
-await page.getByRole('textbox', { name: 'Enter your street address eg.' }).fill('97 Upper Par');
-await page.getByRole('option', { name: '97 Upper Park Road, Walmer' }).click();
+await page.getByRole('textbox', { name: 'Enter your street address eg.' }).fill('96 Chester Rd');
+await page.getByRole('option', { name: '96 Chester Rd, Walmer' }).click();
 await page.getByText('Confirm address').click();
 await page.locator('div').filter({ hasText: /^Click & Collect$/ }).first().click();
 await page.getByText('Confirm Collection').click();
