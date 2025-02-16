@@ -8,6 +8,7 @@ Using type script , this program adds items to the woolworths shopping cart with
 Searches What'sForDinner website for a specific recipe and downloads a pdf of the webpage. Learning how to use this for testing.
 
 ** HOW TO RUN / DEPENDENCIES  ** 
+Typescript , NodeJs
 https://playwright.dev/docs/intro
 Install VS Code
 Navigate to Testing folder to view tests. 
