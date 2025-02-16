@@ -9,4 +9,5 @@ await page.getByRole('link', { name: 'Plant-based Recipes' }).click();
 await page.getByRole('link', { name: 'Buffalo Cauliflower Tacos' }).getByLabel('inactive Favorite toggle').click();
 await page.getByRole('link', { name: 'Buffalo Cauliflower Tacos' }).click();
 await page.getByRole('button', { name: 'print recipe' });
+await page.pdf({ path: './Recipes/YourRecipe.pdf', format: 'A4' });
 });
