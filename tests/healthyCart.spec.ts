@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 //Without Authentication & changing of address
 test('add to cart test', async ({ page }) => {
-await page.goto('https://www.woolworths.co.za/');
+await page.goto('https://www.woolworths.co.za/'); 
 await page.getByText('Delivery Address').click();
 await page.getByRole('textbox', { name: 'Enter your street address eg.' }).click();
 await page.getByRole('textbox', { name: 'Enter your street address eg.' }).fill('96 ');
